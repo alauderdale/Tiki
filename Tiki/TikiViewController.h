@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Tiki.h"
-#import "TikiCommandViewController.h"
+
 
 @interface TikiViewController : UIViewController
 
 @property (strong, nonatomic) Tiki *currentTiki;
 @property (weak, nonatomic) IBOutlet UIImageView *currentTikiImage;
+- (IBAction)showCommand:(id)sender;
+
 
 
 @end

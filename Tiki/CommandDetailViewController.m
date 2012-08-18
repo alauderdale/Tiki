@@ -1,24 +1,22 @@
 //
-//  TikiCommandViewController.m
+//  CommandDetailViewController.m
 //  Tiki
 //
 //  Created by Alex Lauderdale on 8/17/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "TikiCommandViewController.h"
+#import "CommandDetailViewController.h"
 
-@interface TikiCommandViewController ()
+
+@interface CommandDetailViewController ()
 
 @end
 
-@implementation TikiCommandViewController
+@implementation CommandDetailViewController
 
-@synthesize currentTiki;
-@synthesize commandLabel;
-
-
-
+@synthesize randomText= _randomText;
+@synthesize attacks= _attacks;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,13 +31,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [commandLabel setText:[currentTiki command]];
+    
+    // Custom initialization
+    _attacks = [NSArray arrayWithObjects:
+                @"Kick",
+                @"Punch",
+                @"Bite",
+                @"Gnaw",
+                @"Run Away",
+                nil];
+    
+    NSInteger randomIndex = arc4random() % [_attacks count];    
+    NSString *yourRandomString = [_attacks objectAtIndex:randomIndex];
+    
+    [self.randomText setText:[NSString stringWithFormat:@"%@",yourRandomString]];
 }
 
 - (void)viewDidUnload
 {
-    [self setCommandLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -50,7 +59,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)dismiss:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
-}
 @end
