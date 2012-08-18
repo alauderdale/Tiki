@@ -13,5 +13,11 @@
 @property (nonatomic, strong) NSString *name; 
 @property (nonatomic, strong) NSString *filename; 
 @property (nonatomic, strong) NSString *command; 
+@property (nonatomic, strong) NSString *strength; 
+@property (nonatomic, strong) NSString *attack; 
+@property (nonatomic, strong) NSString *defense; 
+@property (nonatomic, strong) NSString *specialPowers; 
+
+
 
 @end

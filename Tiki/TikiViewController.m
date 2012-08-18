@@ -20,6 +20,12 @@
 
 @synthesize currentTiki;
 @synthesize currentTikiImage;
+@synthesize name;
+@synthesize attack;
+@synthesize strength;
+@synthesize powers;
+@synthesize defense;
+
 
 
 
@@ -53,6 +59,11 @@
     [self.currentTikiImage setImage:image];
     
     [self setTitle:[currentTiki name]];
+    self.strength.text = currentTiki.strength;
+    self.defense.text = currentTiki.defense;
+    self.attack.text = currentTiki.attack;
+    self.powers.text = currentTiki.specialPowers;
+    
     
 }
 

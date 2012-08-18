@@ -47,45 +47,27 @@ NSMutableArray *tikis;
     
     Tiki *tiki = [[Tiki alloc]init];
     
-    [tiki setName:@"Tiki Name 1"];
-    [tiki setFilename:@"overlook.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
+    [tiki setName:@"Thunder Tiki"];
+    [tiki setFilename:@"thunder.png"];
+    [tiki setDefense:@"Lightning Speed, Quick Wit"];
+    [tiki setAttack:@"Thunder, Lightning"];
+    [tiki setSpecialPowers:@"Power to move ya!"];
+    [tiki setStrength:@"10.0"];
     [tikis addObject:tiki]; 
     
     tiki = [[Tiki alloc]init];
     
-    [tiki setName:@"Tiki Name 2"];
-    [tiki setFilename:@"flag.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
+    [tiki setName:@"Shark Tiki"];
+    [tiki setFilename:@"shark.png"];
+    [tiki setDefense:@"Tough Skin, sharp Teeth, Smart & Agile"];
+    [tiki setAttack:@"Shark Attack, Lightning Speed"];
+    [tiki setSpecialPowers:@"Power to move ya!"];
+    [tiki setStrength:@"8.0"];
     [tikis addObject:tiki]; 
     
-    tiki = [[Tiki alloc]init];
     
-    [tiki setName:@"Tiki Name 3"];
-    [tiki setFilename:@"olives.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
     
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 4"];
-    [tiki setFilename:@"winery.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 5"];
-    [tiki setFilename:@"beach.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 6"];
-    [tiki setFilename:@"beach.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
+
     
     
 

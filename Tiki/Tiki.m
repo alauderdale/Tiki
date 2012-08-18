@@ -13,5 +13,9 @@
 @synthesize name;
 @synthesize filename;
 @synthesize command;
+@synthesize strength;
+@synthesize defense;
+@synthesize attack;
+@synthesize specialPowers;
 
 @end

@@ -14,6 +14,11 @@
 
 @property (strong, nonatomic) Tiki *currentTiki;
 @property (weak, nonatomic) IBOutlet UIImageView *currentTikiImage;
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *strength;
+@property (strong, nonatomic) IBOutlet UILabel *attack;
+@property (strong, nonatomic) IBOutlet UILabel *powers;
+@property (strong, nonatomic) IBOutlet UILabel *defense;
 - (IBAction)showCommand:(id)sender;
 
 

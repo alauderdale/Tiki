@@ -34,11 +34,11 @@
     
     // Custom initialization
     _attacks = [NSArray arrayWithObjects:
-                @"Kick",
-                @"Punch",
-                @"Bite",
-                @"Gnaw",
-                @"Run Away",
+                @"A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.",
+                @"Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+                @"Don't go around saying the world owes you a living. The world owes you nothing. It was here first.",
+                @"If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced.",
+                @"The aim of art is to represent not the outward appearance of things, but their inward significance.",
                 nil];
     
     NSInteger randomIndex = arc4random() % [_attacks count];    

@@ -17,11 +17,9 @@
 		7E39B6A315DF03430079C759 /* TikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6A115DF03430079C759 /* TikiViewController.m */; };
 		7E39B6A715DF03680079C759 /* TikiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6A615DF03680079C759 /* TikiTableViewController.m */; };
 		7E39B6B015DF06620079C759 /* Tiki.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6AF15DF06620079C759 /* Tiki.m */; };
-		7E39B6B715DF09270079C759 /* beach.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B215DF09270079C759 /* beach.png */; };
-		7E39B6B815DF09270079C759 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B315DF09270079C759 /* flag.png */; };
-		7E39B6B915DF09270079C759 /* olives.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B415DF09270079C759 /* olives.png */; };
-		7E39B6BA15DF09270079C759 /* overlook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B515DF09270079C759 /* overlook.png */; };
-		7E39B6BB15DF09270079C759 /* winery.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B615DF09270079C759 /* winery.png */; };
+		7E42053015DF752B00B8EB6E /* shark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E42052E15DF752B00B8EB6E /* shark.png */; };
+		7E42053115DF752B00B8EB6E /* thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E42052F15DF752B00B8EB6E /* thunder.png */; };
+		7E42053415DF7DBF00B8EB6E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E42053315DF7DBF00B8EB6E /* logo.png */; };
 		7E7B367715DF337500512389 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7B367615DF337500512389 /* QuartzCore.framework */; };
 		7E7B369A15DF514200512389 /* CommandDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7B369815DF514200512389 /* CommandDetailViewController.m */; };
 		7E7B369B15DF514200512389 /* CommandDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E7B369915DF514200512389 /* CommandDetailViewController.xib */; };
@@ -49,11 +47,9 @@
 		7E39B6A615DF03680079C759 /* TikiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TikiTableViewController.m; sourceTree = "<group>"; };
 		7E39B6AE15DF06620079C759 /* Tiki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiki.h; sourceTree = "<group>"; };
 		7E39B6AF15DF06620079C759 /* Tiki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiki.m; sourceTree = "<group>"; };
-		7E39B6B215DF09270079C759 /* beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beach.png; sourceTree = "<group>"; };
-		7E39B6B315DF09270079C759 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
-		7E39B6B415DF09270079C759 /* olives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = olives.png; sourceTree = "<group>"; };
-		7E39B6B515DF09270079C759 /* overlook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlook.png; sourceTree = "<group>"; };
-		7E39B6B615DF09270079C759 /* winery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winery.png; sourceTree = "<group>"; };
+		7E42052E15DF752B00B8EB6E /* shark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shark.png; sourceTree = "<group>"; };
+		7E42052F15DF752B00B8EB6E /* thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunder.png; sourceTree = "<group>"; };
+		7E42053315DF7DBF00B8EB6E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		7E7B367615DF337500512389 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7E7B369715DF514200512389 /* CommandDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandDetailViewController.h; sourceTree = "<group>"; };
 		7E7B369815DF514200512389 /* CommandDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandDetailViewController.m; sourceTree = "<group>"; };
@@ -115,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				7E7B36A915DF5D6100512389 /* source */,
-				7E39B6B115DF09270079C759 /* photos */,
 				7E39B6AD15DF03AA0079C759 /* View Controllers */,
 				7E39B67A15DEDF8C0079C759 /* AppDelegate.h */,
 				7E7B362E15DF31EB00512389 /* images */,
@@ -154,21 +149,12 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		7E39B6B115DF09270079C759 /* photos */ = {
-			isa = PBXGroup;
-			children = (
-				7E39B6B215DF09270079C759 /* beach.png */,
-				7E39B6B315DF09270079C759 /* flag.png */,
-				7E39B6B415DF09270079C759 /* olives.png */,
-				7E39B6B515DF09270079C759 /* overlook.png */,
-				7E39B6B615DF09270079C759 /* winery.png */,
-			);
-			path = photos;
-			sourceTree = "<group>";
-		};
 		7E7B362E15DF31EB00512389 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7E42053315DF7DBF00B8EB6E /* logo.png */,
+				7E42052E15DF752B00B8EB6E /* shark.png */,
+				7E42052F15DF752B00B8EB6E /* thunder.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -236,13 +222,11 @@
 			files = (
 				7E39B67615DEDF8C0079C759 /* InfoPlist.strings in Resources */,
 				7E39B67F15DEDF8C0079C759 /* MainStoryboard.storyboard in Resources */,
-				7E39B6B715DF09270079C759 /* beach.png in Resources */,
-				7E39B6B815DF09270079C759 /* flag.png in Resources */,
-				7E39B6B915DF09270079C759 /* olives.png in Resources */,
-				7E39B6BA15DF09270079C759 /* overlook.png in Resources */,
-				7E39B6BB15DF09270079C759 /* winery.png in Resources */,
 				7E7B369B15DF514200512389 /* CommandDetailViewController.xib in Resources */,
 				7E7B36AB15DF631000512389 /* Tikis.plist in Resources */,
+				7E42053015DF752B00B8EB6E /* shark.png in Resources */,
+				7E42053115DF752B00B8EB6E /* thunder.png in Resources */,
+				7E42053415DF7DBF00B8EB6E /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
