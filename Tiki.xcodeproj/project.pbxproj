@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E39B66C15DEDF8C0079C759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E39B66B15DEDF8C0079C759 /* UIKit.framework */; };
+		7E39B66E15DEDF8C0079C759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E39B66D15DEDF8C0079C759 /* Foundation.framework */; };
+		7E39B67015DEDF8C0079C759 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E39B66F15DEDF8C0079C759 /* CoreGraphics.framework */; };
+		7E39B67615DEDF8C0079C759 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B67415DEDF8C0079C759 /* InfoPlist.strings */; };
+		7E39B67815DEDF8C0079C759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B67715DEDF8C0079C759 /* main.m */; };
+		7E39B67C15DEDF8C0079C759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B67B15DEDF8C0079C759 /* AppDelegate.m */; };
+		7E39B67F15DEDF8C0079C759 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B67D15DEDF8C0079C759 /* MainStoryboard.storyboard */; };
+		7E39B6A315DF03430079C759 /* TikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6A115DF03430079C759 /* TikiViewController.m */; };
+		7E39B6A715DF03680079C759 /* TikiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6A615DF03680079C759 /* TikiTableViewController.m */; };
+		7E39B6AB15DF03A00079C759 /* TikiCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6A915DF03A00079C759 /* TikiCommandViewController.m */; };
+		7E39B6B015DF06620079C759 /* Tiki.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39B6AF15DF06620079C759 /* Tiki.m */; };
+		7E39B6B715DF09270079C759 /* beach.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B215DF09270079C759 /* beach.png */; };
+		7E39B6B815DF09270079C759 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B315DF09270079C759 /* flag.png */; };
+		7E39B6B915DF09270079C759 /* olives.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B415DF09270079C759 /* olives.png */; };
+		7E39B6BA15DF09270079C759 /* overlook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B515DF09270079C759 /* overlook.png */; };
+		7E39B6BB15DF09270079C759 /* winery.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E39B6B615DF09270079C759 /* winery.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E39B66715DEDF8C0079C759 /* Tiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E39B66B15DEDF8C0079C759 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E39B66D15DEDF8C0079C759 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E39B66F15DEDF8C0079C759 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E39B67315DEDF8C0079C759 /* Tiki-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiki-Info.plist"; sourceTree = "<group>"; };
+		7E39B67515DEDF8C0079C759 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E39B67715DEDF8C0079C759 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E39B67915DEDF8C0079C759 /* Tiki-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiki-Prefix.pch"; sourceTree = "<group>"; };
+		7E39B67A15DEDF8C0079C759 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E39B67B15DEDF8C0079C759 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E39B67E15DEDF8C0079C759 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7E39B6A015DF03430079C759 /* TikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TikiViewController.h; sourceTree = "<group>"; };
+		7E39B6A115DF03430079C759 /* TikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TikiViewController.m; sourceTree = "<group>"; };
+		7E39B6A515DF03680079C759 /* TikiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TikiTableViewController.h; sourceTree = "<group>"; };
+		7E39B6A615DF03680079C759 /* TikiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TikiTableViewController.m; sourceTree = "<group>"; };
+		7E39B6A815DF03A00079C759 /* TikiCommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TikiCommandViewController.h; sourceTree = "<group>"; };
+		7E39B6A915DF03A00079C759 /* TikiCommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TikiCommandViewController.m; sourceTree = "<group>"; };
+		7E39B6AE15DF06620079C759 /* Tiki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiki.h; sourceTree = "<group>"; };
+		7E39B6AF15DF06620079C759 /* Tiki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiki.m; sourceTree = "<group>"; };
+		7E39B6B215DF09270079C759 /* beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beach.png; sourceTree = "<group>"; };
+		7E39B6B315DF09270079C759 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		7E39B6B415DF09270079C759 /* olives.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = olives.png; sourceTree = "<group>"; };
+		7E39B6B515DF09270079C759 /* overlook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlook.png; sourceTree = "<group>"; };
+		7E39B6B615DF09270079C759 /* winery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winery.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E39B66415DEDF8C0079C759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39B66C15DEDF8C0079C759 /* UIKit.framework in Frameworks */,
+				7E39B66E15DEDF8C0079C759 /* Foundation.framework in Frameworks */,
+				7E39B67015DEDF8C0079C759 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E39B65C15DEDF8C0079C759 = {
+			isa = PBXGroup;
+			children = (
+				7E39B67115DEDF8C0079C759 /* Tiki */,
+				7E39B66A15DEDF8C0079C759 /* Frameworks */,
+				7E39B66815DEDF8C0079C759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E39B66815DEDF8C0079C759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E39B66715DEDF8C0079C759 /* Tiki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E39B66A15DEDF8C0079C759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E39B66B15DEDF8C0079C759 /* UIKit.framework */,
+				7E39B66D15DEDF8C0079C759 /* Foundation.framework */,
+				7E39B66F15DEDF8C0079C759 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E39B67115DEDF8C0079C759 /* Tiki */ = {
+			isa = PBXGroup;
+			children = (
+				7E39B6B115DF09270079C759 /* photos */,
+				7E39B6AD15DF03AA0079C759 /* View Controllers */,
+				7E39B67A15DEDF8C0079C759 /* AppDelegate.h */,
+				7E39B67B15DEDF8C0079C759 /* AppDelegate.m */,
+				7E39B67D15DEDF8C0079C759 /* MainStoryboard.storyboard */,
+				7E39B6AE15DF06620079C759 /* Tiki.h */,
+				7E39B6AF15DF06620079C759 /* Tiki.m */,
+				7E39B67215DEDF8C0079C759 /* Supporting Files */,
+			);
+			path = Tiki;
+			sourceTree = "<group>";
+		};
+		7E39B67215DEDF8C0079C759 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E39B67315DEDF8C0079C759 /* Tiki-Info.plist */,
+				7E39B67415DEDF8C0079C759 /* InfoPlist.strings */,
+				7E39B67715DEDF8C0079C759 /* main.m */,
+				7E39B67915DEDF8C0079C759 /* Tiki-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E39B6AD15DF03AA0079C759 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E39B6A815DF03A00079C759 /* TikiCommandViewController.h */,
+				7E39B6A915DF03A00079C759 /* TikiCommandViewController.m */,
+				7E39B6A515DF03680079C759 /* TikiTableViewController.h */,
+				7E39B6A615DF03680079C759 /* TikiTableViewController.m */,
+				7E39B6A015DF03430079C759 /* TikiViewController.h */,
+				7E39B6A115DF03430079C759 /* TikiViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E39B6B115DF09270079C759 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				7E39B6B215DF09270079C759 /* beach.png */,
+				7E39B6B315DF09270079C759 /* flag.png */,
+				7E39B6B415DF09270079C759 /* olives.png */,
+				7E39B6B515DF09270079C759 /* overlook.png */,
+				7E39B6B615DF09270079C759 /* winery.png */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E39B66615DEDF8C0079C759 /* Tiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E39B68515DEDF8C0079C759 /* Build configuration list for PBXNativeTarget "Tiki" */;
+			buildPhases = (
+				7E39B66315DEDF8C0079C759 /* Sources */,
+				7E39B66415DEDF8C0079C759 /* Frameworks */,
+				7E39B66515DEDF8C0079C759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tiki;
+			productName = Tiki;
+			productReference = 7E39B66715DEDF8C0079C759 /* Tiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E39B65E15DEDF8C0079C759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 7E39B66115DEDF8C0079C759 /* Build configuration list for PBXProject "Tiki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E39B65C15DEDF8C0079C759;
+			productRefGroup = 7E39B66815DEDF8C0079C759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E39B66615DEDF8C0079C759 /* Tiki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E39B66515DEDF8C0079C759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39B67615DEDF8C0079C759 /* InfoPlist.strings in Resources */,
+				7E39B67F15DEDF8C0079C759 /* MainStoryboard.storyboard in Resources */,
+				7E39B6B715DF09270079C759 /* beach.png in Resources */,
+				7E39B6B815DF09270079C759 /* flag.png in Resources */,
+				7E39B6B915DF09270079C759 /* olives.png in Resources */,
+				7E39B6BA15DF09270079C759 /* overlook.png in Resources */,
+				7E39B6BB15DF09270079C759 /* winery.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E39B66315DEDF8C0079C759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39B67815DEDF8C0079C759 /* main.m in Sources */,
+				7E39B67C15DEDF8C0079C759 /* AppDelegate.m in Sources */,
+				7E39B6A315DF03430079C759 /* TikiViewController.m in Sources */,
+				7E39B6A715DF03680079C759 /* TikiTableViewController.m in Sources */,
+				7E39B6AB15DF03A00079C759 /* TikiCommandViewController.m in Sources */,
+				7E39B6B015DF06620079C759 /* Tiki.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E39B67415DEDF8C0079C759 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E39B67515DEDF8C0079C759 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E39B67D15DEDF8C0079C759 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E39B67E15DEDF8C0079C759 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E39B68315DEDF8C0079C759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E39B68415DEDF8C0079C759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E39B68615DEDF8C0079C759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiki/Tiki-Prefix.pch";
+				INFOPLIST_FILE = "Tiki/Tiki-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E39B68715DEDF8C0079C759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiki/Tiki-Prefix.pch";
+				INFOPLIST_FILE = "Tiki/Tiki-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E39B66115DEDF8C0079C759 /* Build configuration list for PBXProject "Tiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E39B68315DEDF8C0079C759 /* Debug */,
+				7E39B68415DEDF8C0079C759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E39B68515DEDF8C0079C759 /* Build configuration list for PBXNativeTarget "Tiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E39B68615DEDF8C0079C759 /* Debug */,
+				7E39B68715DEDF8C0079C759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E39B65E15DEDF8C0079C759 /* Project object */;
+}
