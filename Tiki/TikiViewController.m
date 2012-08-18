@@ -49,10 +49,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIImage *image = [UIImage imageNamed:[currentTiki filename]];
-    [self.currentTikiImage setImage:image];
     
-    [self setTitle:[currentTiki name]];
+    
+    
     
 }
 

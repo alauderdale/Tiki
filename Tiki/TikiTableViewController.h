@@ -12,4 +12,7 @@
 
 @interface TikiTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSDictionary *tikis;
+@property (nonatomic, strong) NSArray *tikiKeys;
+
 @end

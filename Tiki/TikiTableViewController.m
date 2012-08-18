@@ -13,20 +13,22 @@
 @end
 
 @implementation TikiTableViewController
+@synthesize tikis;
+@synthesize tikiKeys;
 
-NSMutableArray *tikis;
+
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 
 {
     
-    if ([segue.identifier isEqualToString:@"ShowTiki"]) {
-        TikiViewController *tvc = [segue destinationViewController];
-        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        Tiki *c = [tikis objectAtIndex:[path row]];
-        [tvc setCurrentTiki:c];
-    }
+//    if ([segue.identifier isEqualToString:@"ShowTiki"]) {
+//        TikiViewController *tvc = [segue destinationViewController];
+//        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+//        Tiki *c = [tikis objectAtIndex:[path row]];
+//        [tvc setCurrentTiki:c];
+//    }
 
 }
 
@@ -43,51 +45,14 @@ NSMutableArray *tikis;
 {
     [super viewDidLoad];
     
-    tikis = [[NSMutableArray alloc] init];
     
-    Tiki *tiki = [[Tiki alloc]init];
+    // load iOS courses
+    NSString *myfile = [[NSBundle mainBundle] 
+                        pathForResource:@"Tikis" ofType:@"plist"];
+    tikis = [[NSDictionary alloc] initWithContentsOfFile:myfile];
+    tikiKeys = [tikis allKeys];
     
-    [tiki setName:@"Tiki Name 1"];
-    [tiki setFilename:@"overlook.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 2"];
-    [tiki setFilename:@"flag.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 3"];
-    [tiki setFilename:@"olives.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 4"];
-    [tiki setFilename:@"winery.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 5"];
-    [tiki setFilename:@"beach.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    tiki = [[Tiki alloc]init];
-    
-    [tiki setName:@"Tiki Name 6"];
-    [tiki setFilename:@"beach.png"];
-    [tiki setCommand:@"Tiki Say Do thy bidding"];
-    [tikis addObject:tiki]; 
-    
-    
+      
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -122,6 +87,7 @@ NSMutableArray *tikis;
 
     // Return the number of rows in the section.
     return [tikis count];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -131,8 +97,11 @@ NSMutableArray *tikis;
     
     // Configure the cell...
     
-    Tiki *current = [tikis objectAtIndex:indexPath.row];
-    [cell.textLabel setText:[current name]];
+     NSString *tikiName;
+    
+     tikiName = [tikiKeys objectAtIndex:indexPath.row];
+    
+     [[cell textLabel] setText:tikiName];
     
     return cell;
 }

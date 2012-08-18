@@ -10,8 +10,8 @@
 
 @implementation Tiki
 
-@synthesize name;
-@synthesize filename;
-@synthesize command;
+
+@synthesize tikis;
+
 
 @end

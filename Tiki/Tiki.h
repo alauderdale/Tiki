@@ -10,8 +10,11 @@
 
 @interface Tiki : NSObject
 
-@property (nonatomic, strong) NSString *name; 
-@property (nonatomic, strong) NSString *filename; 
-@property (nonatomic, strong) NSString *command; 
+
+//plist 
+
+@property (nonatomic, strong) NSDictionary *tikis;
+
+
 
 @end
