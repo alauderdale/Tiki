@@ -53,7 +53,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fpl-D3-taS">
-                                <rect key="frame" x="130" y="209" width="72" height="37"/>
+                                <rect key="frame" x="130" y="203" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Attack">
@@ -164,7 +164,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGv-eT-O0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="yNv-lo-eAD" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bzf-TZ-zby">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -201,23 +201,6 @@
     <resources>
         <image name="logo.png" width="591" height="493"/>
     </resources>
-    <classes>
-        <class className="TikiTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TikiTableViewController.h"/>
-        </class>
-        <class className="TikiViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TikiViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showCommand:"/>
-                <relationship kind="outlet" name="attack" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="currentTikiImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="defense" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="powers" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="strength" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

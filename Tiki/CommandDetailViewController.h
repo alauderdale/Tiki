@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tiki.h"
 
 @interface CommandDetailViewController : UIViewController
 
@@ -20,5 +21,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *randomText;
 @property (strong, nonatomic) NSArray *attacks;
+@property (strong, nonatomic) Tiki *currentTiki;
 
 @end

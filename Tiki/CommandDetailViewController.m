@@ -17,6 +17,11 @@
 
 @synthesize randomText= _randomText;
 @synthesize attacks= _attacks;
+@synthesize currentTiki;
+
+
+
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -24,6 +29,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }
@@ -31,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     
     // Custom initialization
     _attacks = [NSArray arrayWithObjects:
@@ -42,9 +49,8 @@
                 nil];
     
     NSInteger randomIndex = arc4random() % [_attacks count];    
-    NSString *yourRandomString = [_attacks objectAtIndex:randomIndex];
-    
-    [self.randomText setText:[NSString stringWithFormat:@"%@",yourRandomString]];
+    NSString *randomCommand = [_attacks objectAtIndex:randomIndex];
+    [self.randomText setText:[NSString stringWithFormat:@"%@",randomCommand]];
 }
 
 - (void)viewDidUnload

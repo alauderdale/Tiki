@@ -29,16 +29,6 @@
 
 
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    TikiCommandViewController *cvc = [segue destinationViewController];
-//    [cvc setCurrentTiki:[self currentTiki]];
-//
-//
-//}
-
-
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -63,6 +53,8 @@
     self.defense.text = currentTiki.defense;
     self.attack.text = currentTiki.attack;
     self.powers.text = currentTiki.specialPowers;
+    
+
     
     
 }
@@ -92,6 +84,7 @@
 - (IBAction)showCommand:(id)sender {
     
     CommandDetailViewController *detailViewController = [[CommandDetailViewController alloc] initWithNibName:@"CommandDetailViewController" bundle:nil];
+        [detailViewController setCurrentTiki:[self currentTiki]];
     [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
 }
 
@@ -102,6 +95,7 @@
     [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
     
     CommandDetailViewController *detailViewController = [[CommandDetailViewController alloc] initWithNibName:@"CommandDetailViewController" bundle:nil];
+    [detailViewController setCurrentTiki:[self currentTiki]];
     [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
 }
 
