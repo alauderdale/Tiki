@@ -53,6 +53,7 @@ NSMutableArray *tikis;
     [tiki setAttack:@"Thunder, Lightning"];
     [tiki setSpecialPowers:@"Power to move ya!"];
     [tiki setStrength:@"10.0"];
+    [tiki setCommand:@"Command!"];
     [tikis addObject:tiki]; 
     
     tiki = [[Tiki alloc]init];
@@ -63,6 +64,29 @@ NSMutableArray *tikis;
     [tiki setAttack:@"Shark Attack, Lightning Speed"];
     [tiki setSpecialPowers:@"Power to move ya!"];
     [tiki setStrength:@"8.0"];
+    [tiki setCommand:@"Command!"];
+    [tikis addObject:tiki]; 
+    
+    tiki = [[Tiki alloc]init];
+    
+    [tiki setName:@"Fire Tiki"];
+    [tiki setFilename:@"fire.png"];
+    [tiki setDefense:@"Concealment, Supprise"];
+    [tiki setAttack:@"Fire Shower, Lightning Speed"];
+    [tiki setSpecialPowers:@"Power to move ya!"];
+    [tiki setStrength:@"7.0"];
+    [tiki setCommand:@"Command!"];
+    [tikis addObject:tiki]; 
+    
+    tiki = [[Tiki alloc]init];
+    
+    [tiki setName:@"Angry Tiki"];
+    [tiki setFilename:@"angry.png"];
+    [tiki setDefense:@"Concealment, Supprise"];
+    [tiki setAttack:@"Fire Shower, Lightning Speed"];
+    [tiki setSpecialPowers:@"Power to move ya!"];
+    [tiki setStrength:@"7.0"];
+    [tiki setCommand:@"Command!"];
     [tikis addObject:tiki]; 
     
     

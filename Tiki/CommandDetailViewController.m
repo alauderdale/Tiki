@@ -16,8 +16,11 @@
 @implementation CommandDetailViewController
 
 @synthesize randomText= _randomText;
+@synthesize tikiSayLabel= _tikiSayLabel;
 @synthesize attacks= _attacks;
 @synthesize currentTiki;
+
+
 
 
 
@@ -51,6 +54,7 @@
     NSInteger randomIndex = arc4random() % [_attacks count];    
     NSString *randomCommand = [_attacks objectAtIndex:randomIndex];
     [self.randomText setText:[NSString stringWithFormat:@"%@",randomCommand]];
+    [self.tikiSayLabel setText:[NSString stringWithFormat:@"%@ Say...",currentTiki.name]];
 }
 
 - (void)viewDidUnload
@@ -64,5 +68,6 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 
 @end
